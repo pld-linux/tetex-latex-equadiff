@@ -4,6 +4,7 @@
 %define short_name equadiff
 %define	texhash	[ ! -x %{_bindir}/texhash ] || %{_bindir}/texhash 1>&2 ;
 Summary:	Formats for International conference on differential equations
+Summary(pl):	Formaty dla miêdzynarodowej konferencji na temat równañ ró¿nicznowych
 Name:		tetex-latex-%{short_name}
 Version:	1.0
 Release:	1
@@ -22,13 +23,17 @@ Source4:	http://pc2.iam.fmph.uniba.sk/equadiff/proceedings/paper.pdf
 Source5:	http://pc2.iam.fmph.uniba.sk/equadiff/proceedings/paper.tex
 # Source5-md5:	e0f4a0aff8d3ad6faafad14bfa5ac26a
 URL:		http://pc2.iam.fmph.uniba.sk/equadiff/proceedings/
-Requires:	tetex-latex
 Requires(post,postun):	/usr/bin/texhash
+Requires:	tetex-latex
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Latex style format and instructions for preparation of manuscripts
+LaTeX style format and instructions for preparation of manuscripts
 Mini-symposia and Contributed talks of Equadiff 11 Conference.
+
+%description -l pl
+Format stylu LaTeXa i instrukcje do przygotowywania dokumentów
+Mini-symposia i Contributed talks z konferencji Equadiff 11.
 
 %prep
 %setup -q -c -T
