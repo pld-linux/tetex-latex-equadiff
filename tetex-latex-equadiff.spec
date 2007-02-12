@@ -4,7 +4,7 @@
 %define short_name equadiff
 %define	texhash	[ ! -x %{_bindir}/texhash ] || %{_bindir}/texhash 1>&2 ;
 Summary:	Formats for International conference on differential equations
-Summary(pl.UTF-8):   Formaty dla międzynarodowej konferencji na temat równań różnicznowych
+Summary(pl.UTF-8):	Formaty dla międzynarodowej konferencji na temat równań różnicznowych
 Name:		tetex-latex-%{short_name}
 Version:	1.0
 Release:	1
