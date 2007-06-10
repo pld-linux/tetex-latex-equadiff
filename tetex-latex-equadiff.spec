@@ -25,6 +25,7 @@ Source5:	http://pc2.iam.fmph.uniba.sk/equadiff/proceedings/paper.tex
 URL:		http://pc2.iam.fmph.uniba.sk/equadiff/proceedings/
 Requires(post,postun):	/usr/bin/texhash
 Requires:	tetex-latex
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
